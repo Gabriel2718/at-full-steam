@@ -1,12 +1,9 @@
-# React + Vite
+# At Full Steam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto, desenvolvido em React, consiste em um site que reune informações de jogos em promoção na loja Steam, e as apresenta para o usuário em um layout de grade com navegação e páginas (há até 6 cards em cada página) e uma barra de pesquisa para buscar títulos específicos. O site consome a API cheapshark criada para este fim.
 
-Currently, two official plugins are available:
+O projeto utiliza a biblioteca [Material UI](https://mui.com/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como executar
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para executar o projeto, basta clonar este repositório com o comando ***git clone https://github.com/Gabriel2718/cheapshak-site*** ou baixá-lo através desta página do GitHub. Após isso, é necessário instalar suas dependências com o comando ***npm install*** e, por fim, executar ***npm run dev*** e acessar sua URL (geralmente http://localhost/5173, URL padrão do Vite).
