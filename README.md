@@ -6,4 +6,4 @@ O projeto utiliza a biblioteca [Material UI](https://mui.com/).
 
 ## Como executar
 
-Para executar o projeto, basta clonar este repositório com o comando ***git clone https://github.com/Gabriel2718/cheapshak-site*** ou baixá-lo através desta página do GitHub. Após isso, é necessário instalar suas dependências com o comando ***npm install*** e, por fim, executar ***npm run dev*** e acessar sua URL (geralmente http://localhost/5173, URL padrão do Vite).
+Para executar o projeto, basta clonar este repositório com o comando ***git clone https://github.com/Gabriel2718/at-full-steam*** ou baixá-lo através desta página do GitHub. Após isso, é necessário instalar suas dependências com o comando ***npm install*** e, por fim, executar ***npm run dev*** e acessar sua URL (geralmente http://localhost/5173, URL padrão do Vite).
