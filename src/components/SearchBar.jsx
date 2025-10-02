@@ -6,15 +6,35 @@ import { usePageContext } from '../contexts/MainContext';
 export function SearchBar() {
     const { dispatch } = usePageContext();
     const [searchValue, setSearchValue] = useState('');
+    const [outline, setOutline] = useState('white');
+
+    function toSearch() {
+        if(searchValue == '') {
+                setOutline('red');
+        } else {
+            setOutline('white');
+            dispatch({ type: 'SET_TITLE_PARAM', payload: searchValue });
+        }
+    }
 
     return <div className='search-bar'>
-        <input type="text" className='search-bar' value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/>
+        <input 
+            type="text" 
+            className='search-bar' 
+            value={searchValue} onChange={(e) => {
+                setSearchValue(e.target.value);
+                setOutline('white');
+            }}
+            placeholder={outline == 'red' && 'Insira um título!'}
+            style={{boxShadow: `0 0 0 1px ${outline}`}}
+            onKeyDown={(e) => {
+                if(e.key === 'Enter') {
+                    toSearch();
+                }
+            }}
+        />
         <button  style={{marginLeft: '1rem'}} onClick={() => {
-            if(searchValue == '') {
-                alert('Insira um título para realizar a busca!');
-            } else {
-                dispatch({ type: 'SET_TITLE_PARAM', payload: searchValue });
-            }
+            toSearch();
         }}>
             <SearchIcon />
         </button>
